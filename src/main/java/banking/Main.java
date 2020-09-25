@@ -4,10 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        SqliteDB.databaseName(String.valueOf(args[1]));
-        SqliteDB.sqliteDBConnection();
-        BankScreens.mainScreen();
-        SqliteDB.closeSqliteDBConnection();
+        ///SqliteDB.databaseName(String.valueOf(args[1]));
+        //SqliteDB.sqliteDBConnection();
+        //BankScreens.mainScreen();
+        //SqliteDB.closeSqliteDBConnection();
+
+        System.out.println("hello World");
 
     }
 
