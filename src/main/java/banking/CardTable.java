@@ -2,7 +2,7 @@ package banking;
 
 import java.sql.*;
 
-public class CardTable extends SqliteDB {
+public class CardTable extends banking.SqliteDB {
 
     public static void createCardTable() {
         try {
@@ -108,7 +108,7 @@ public class CardTable extends SqliteDB {
                 blance = resultSet.getInt("balance");
             }
             if (amount > blance) {
-                System.out.println("Not enough money!\n");
+                System.out.println("Not enough money!");
                 BankScreens.login();
             } else {
                 try {
@@ -127,7 +127,7 @@ public class CardTable extends SqliteDB {
                         int sum = reciverBlance + amount;
                         SqliteDB.getStatement().executeUpdate(" update card set balance = " + sum +
                                 " WHERE number = " + ClientAccount.getReciver() + " ;");
-                        System.out.println("Success!\n");
+                        System.out.println("Success!");
                         BankScreens.login();
                     } else {
                         System.out.println("Somthing wrong!");
