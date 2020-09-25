@@ -2,7 +2,7 @@ package banking;
 
 import java.sql.*;
 
-public class CardTable extends banking.SqliteDB {
+public class CardTable extends SqliteDB {
 
     public static void createCardTable() {
         try {
