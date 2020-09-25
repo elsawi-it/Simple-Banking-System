@@ -1,18 +1,16 @@
 package banking;
 
 import org.sqlite.SQLiteDataSource;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Arrays;
 
 public class SqliteDB {
 
 
     private static Connection con = null;
     private static Statement statement = null;
-    private static String databaseFileName = null;
+    private static final String databaseName = "card.sqlite";
 
 
     public static void setStatement(Statement statement) {
@@ -21,22 +19,23 @@ public class SqliteDB {
     public static void setCon(Connection con) {
         SqliteDB.con = con;
     }
-    public static Connection getCon() {
-        return con;
-    }
     public static Statement getStatement() {
         return statement;
     }
 
-    public static void databaseName(String fileName) {
-        databaseFileName = fileName;
+    /**
+     * if want to create your a new specific database name by invoking its name
+     * from the main method use this databaseName(String fileName) method.
 
-    }
+    //->  public static void databaseName(String fileName) { databaseName = fileName; }
+
+    */
+
     public static void sqliteDBConnection() {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            String url = "jdbc:sqlite:" + databaseFileName;
+            String url = "jdbc:sqlite:" + databaseName;
             SQLiteDataSource dataSource = new SQLiteDataSource();
             dataSource.setUrl(url);
             con = dataSource.getConnection();
