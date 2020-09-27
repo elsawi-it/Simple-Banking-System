@@ -96,7 +96,9 @@ public class BankScreens {
             mainScreen();
         } else if (input == 0) {
             exit();
-        } else {
+        }
+
+        if (!(input >= 0 && input <= 5)) {
             login();
         }
     }
