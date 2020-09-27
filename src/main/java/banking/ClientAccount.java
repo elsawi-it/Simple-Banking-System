@@ -52,11 +52,8 @@ public class ClientAccount {
         if (CardTable.selectAllDataFromNumberColume(String.valueOf(getCardNumber()))) {
             insertIntoTable();
         }
-        System.out.println("Your card has been created");
-        System.out.println(getCardNumber());
-        System.out.println("Your card PIN:");
-        System.out.println(getCardPinCode());
-        System.out.println();
+        System.out.println("card number:" + getCardNumber());
+        System.out.println("card PIN:" + getCardPinCode());
         BankScreens.mainScreen();
     }
 
@@ -179,7 +176,7 @@ public class ClientAccount {
         System.out.println();
 
         if (!luhnAlgorithm(recievedCardNumber)) {
-            System.out.println("Probably you made mistake in the card number. Please try again!");
+            System.out.println("Probably you made mistake in the card number. Please try again!\n");
             BankScreens.login();
         }
 
