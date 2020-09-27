@@ -108,7 +108,7 @@ public class CardTable extends SqliteDB {
                 blance = resultSet.getInt("balance");
             }
             if (amount > blance) {
-                System.out.println("Not enough money!");
+                System.out.println("Not enough money!\n");
                 BankScreens.login();
             } else {
                 try {
@@ -127,7 +127,7 @@ public class CardTable extends SqliteDB {
                         int sum = reciverBlance + amount;
                         SqliteDB.getStatement().executeUpdate(" update card set balance = " + sum +
                                 " WHERE number = " + ClientAccount.getReciver() + " ;");
-                        System.out.println("Success!");
+                        System.out.println("Success!\n");
                         BankScreens.login();
                     } else {
                         System.out.println("Somthing wrong!");
