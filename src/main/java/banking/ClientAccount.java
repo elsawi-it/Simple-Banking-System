@@ -190,10 +190,10 @@ public class ClientAccount {
                                      amount);
         }
 
-        if (!CardTable.cardIsAvaliable(recievedCardNumber)) {
-            System.out.println("Such a card does not exist.");
-            BankScreens.login();
-        }
+        //if (!CardTable.cardIsAvaliable(recievedCardNumber)) {
+         //   System.out.println("Such a card does not exist.");
+           // BankScreens.login();
+        //}
     }
 
 
