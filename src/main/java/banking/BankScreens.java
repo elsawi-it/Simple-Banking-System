@@ -20,7 +20,8 @@ public class BankScreens {
 
 
     public static void mainScreen() {
-
+        System.out.println();
+        SqliteDB.sqliteDBConnection();
         System.out.println("1. Create an account");
         System.out.println("2. Log into account");
         System.out.println("0. Exit");
@@ -34,7 +35,7 @@ public class BankScreens {
             logIntoAccount();
         } else if (input == 0) {
             exit();
-            SqliteDB.closeSqliteDBConnection();
+
         } else {
             mainScreen();
         }
@@ -106,6 +107,7 @@ public class BankScreens {
 
 
     public static void exit() {
+        SqliteDB.closeSqliteDBConnection();
         System.out.println("Bye!");
     }
 
