@@ -1,11 +1,10 @@
+# **Simple Banking System**
 
-## Web Quiz Engine
-
-On the Internet, you can often find sites where you need to answer some questions. It can be educational sites, sites with psychological tests, job search services, or just entertaining sites like web quests. The common thing for them is the ability to answer questions (or quizzes) and then see some results. 
+Today, most people have credit cards, which save us time, energy, and nerves. From not having to carry a wallet full of cash to consumer protection, cards make our lives easier in many ways. 
 
 ## In this project
 
-I'm going to develop a multi-users web service for creating and solving quizzes.
+You will find a simple banking system with a database in how to use the **Luhn algorithm** for creating cards and with other simple bank services like depositing, transferring money between bank accounts, creating, and deleting accounts.
 
-Please check out how it looks 
-[YouTube video](https://www.youtube.com/channel/UCJed6lVwzEoP0VUamk8PRVA/playlists)  Soon!
+Please check out how it looks
+[YouTube video](bit.ly/36gDYCT)
