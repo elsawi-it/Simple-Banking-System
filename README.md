@@ -7,4 +7,6 @@ Today, most people have credit cards, which save us time, energy, and nerves. Fr
 You will find a simple banking system with a database in how to use the **Luhn algorithm** for creating cards and with other simple bank services like depositing, transferring money between bank accounts, creating, and deleting accounts.
 
 Please check out how it looks
+
+[YouTube video]
 https://bit.ly/4fHV2TI
